@@ -16,9 +16,9 @@ public class SomethingsImpl implements Somethings {
 
   private final List<Something> somethings = asList(
     new Something(1, "first thing"),
-    new Something(2, "first thing"),
-    new Something(3, "first thing"),
-    new Something(4, "first thing")
+    new Something(2, "second thing"),
+    new Something(3, "third thing"),
+    new Something(4, "fourth thing")
   );
 
   private final ScheduledExecutorService scheduler;
