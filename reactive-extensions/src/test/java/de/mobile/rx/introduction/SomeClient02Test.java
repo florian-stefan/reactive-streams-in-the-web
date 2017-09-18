@@ -1,4 +1,4 @@
-package de.mobile.rx.client2;
+package de.mobile.rx.introduction;
 
 import de.mobile.rx.something.Somethings;
 import de.mobile.rx.something.Something;
@@ -14,18 +14,18 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-public class SomethingClientTest {
+public class SomeClient02Test {
 
   @Mock
   private Somethings somethingsMock;
 
-  private SomethingClient sut;
+  private SomeClient02 sut;
 
   @Before
   public void setUp() throws Exception {
     initMocks(this);
 
-    sut = new SomethingClient(somethingsMock, Runnable::run);
+    sut = new SomeClient02(somethingsMock, Runnable::run);
   }
 
   @Test

@@ -1,11 +1,11 @@
-package de.mobile.rx.client1;
+package de.mobile.rx.introduction;
 
 import de.mobile.rx.something.Something;
 import de.mobile.rx.something.Somethings;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class SomethingClient {
+public class SomeClient01 {
 
   private final Somethings somethings;
 

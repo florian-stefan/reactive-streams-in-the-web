@@ -1,8 +1,8 @@
-package de.mobile.rx.reactor;
+package de.mobile.rx.shapes;
 
 import lombok.Value;
 
 @Value(staticConstructor = "of")
-public class Square {
+public class Circle {
   private Color color;
 }

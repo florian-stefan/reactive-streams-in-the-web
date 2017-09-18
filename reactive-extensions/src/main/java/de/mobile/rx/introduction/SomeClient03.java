@@ -1,4 +1,4 @@
-package de.mobile.rx.client3;
+package de.mobile.rx.introduction;
 
 import de.mobile.rx.something.Something;
 import de.mobile.rx.something.Somethings;
@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.concurrent.CompletableFuture;
 
 @RequiredArgsConstructor
-public class SomethingClient {
+public class SomeClient03 {
 
   private final Somethings somethings;
 

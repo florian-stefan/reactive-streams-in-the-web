@@ -1,4 +1,4 @@
-package de.mobile.rx.client3;
+package de.mobile.rx.introduction;
 
 import de.mobile.rx.something.Something;
 import de.mobile.rx.something.Somethings;
@@ -14,9 +14,9 @@ import java.util.function.Consumer;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-public class SomethingClientTest {
+public class SomeClient03Test {
 
-  private SomethingClient sut;
+  private SomeClient03 sut;
 
   @Test
   public void shouldLoadSomething() throws Exception {
@@ -37,11 +37,11 @@ public class SomethingClientTest {
   }
 
   private void givenSomethingClientFor(Exception error) {
-    sut = new SomethingClient(new SomethingsStub(callback -> callback.accept(error, null)));
+    sut = new SomeClient03(new SomethingsStub(callback -> callback.accept(error, null)));
   }
 
   private void givenSomethingClientFor(Something something) {
-    sut = new SomethingClient(new SomethingsStub(callback -> callback.accept(null, something)));
+    sut = new SomeClient03(new SomethingsStub(callback -> callback.accept(null, something)));
   }
 
   @RequiredArgsConstructor

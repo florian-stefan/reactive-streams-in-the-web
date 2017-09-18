@@ -1,4 +1,4 @@
-package de.mobile.rx.reactor;
+package de.mobile.rx.shapes;
 
 public enum Color {
   BLUE, YELLOW, GREEN

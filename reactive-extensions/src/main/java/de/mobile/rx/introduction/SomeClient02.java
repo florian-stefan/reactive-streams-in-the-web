@@ -1,4 +1,4 @@
-package de.mobile.rx.client2;
+package de.mobile.rx.introduction;
 
 import de.mobile.rx.something.Somethings;
 import de.mobile.rx.something.Something;
@@ -10,7 +10,7 @@ import java.util.concurrent.Executor;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 
 @RequiredArgsConstructor
-public class SomethingClient {
+public class SomeClient02 {
 
   private final Somethings somethings;
   private final Executor executor;
