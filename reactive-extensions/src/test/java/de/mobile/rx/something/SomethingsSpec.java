@@ -1,6 +1,6 @@
-package de.mobile.something;
+package de.mobile.rx.something;
 
-import de.mobile.something.SomethingsImpl.SomethingNotFoundException;
+import de.mobile.rx.something.SomethingsImpl.SomethingNotFoundException;
 import org.junit.Before;
 import org.junit.Test;
 

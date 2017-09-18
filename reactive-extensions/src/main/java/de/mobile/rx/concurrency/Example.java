@@ -1,7 +1,7 @@
-package de.mobile.concurrency;
+package de.mobile.rx.concurrency;
 
-import de.mobile.something.Somethings;
-import de.mobile.something.SomethingsImpl;
+import de.mobile.rx.something.Somethings;
+import de.mobile.rx.something.SomethingsImpl;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Scheduler;

@@ -1,4 +1,4 @@
-package de.mobile.reactor;
+package de.mobile.rx.reactor;
 
 public enum Color {
   BLUE, YELLOW, GREEN

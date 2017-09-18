@@ -1,7 +1,7 @@
-package de.mobile.client1;
+package de.mobile.rx.client1;
 
-import de.mobile.something.Something;
-import de.mobile.something.Somethings;
+import de.mobile.rx.something.Something;
+import de.mobile.rx.something.Somethings;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

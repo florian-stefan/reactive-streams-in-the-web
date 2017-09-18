@@ -1,7 +1,7 @@
-package de.mobile.client2;
+package de.mobile.rx.client2;
 
-import de.mobile.something.Something;
-import de.mobile.something.Somethings;
+import de.mobile.rx.something.Somethings;
+import de.mobile.rx.something.Something;
 import lombok.RequiredArgsConstructor;
 
 import java.util.concurrent.CompletableFuture;

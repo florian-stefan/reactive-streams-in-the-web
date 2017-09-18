@@ -1,13 +1,11 @@
-package de.mobile.client2;
+package de.mobile.rx.client1;
 
-import de.mobile.something.Something;
-import de.mobile.something.Somethings;
-import de.mobile.something.SomethingsImpl.SomethingNotFoundException;
+import de.mobile.rx.something.Somethings;
+import de.mobile.rx.something.Something;
+import de.mobile.rx.something.SomethingsImpl.SomethingNotFoundException;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
-
-import java.util.concurrent.CompletableFuture;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -25,25 +23,23 @@ public class SomethingClientTest {
   public void setUp() throws Exception {
     initMocks(this);
 
-    sut = new SomethingClient(somethingsMock, Runnable::run);
+    sut = new SomethingClient(somethingsMock);
   }
 
   @Test
   public void shouldLoadSomething() throws Exception {
     when(somethingsMock.loadById(1)).thenReturn(new Something(1, "something"));
 
-    CompletableFuture<Something> eventualSomething = sut.loadById(1);
+    Something something = sut.loadById(1);
 
-    assertThat(eventualSomething.get()).isEqualTo(new Something(1, "something"));
+    assertThat(something).isEqualTo(new Something(1, "something"));
   }
 
   @Test
   public void shouldFailToLoadSomething() throws Exception {
     when(somethingsMock.loadById(1)).thenThrow(new SomethingNotFoundException(1));
 
-    CompletableFuture<Something> eventualSomething = sut.loadById(1);
-
-    assertThatThrownBy(eventualSomething::get).hasCause(new SomethingNotFoundException(1));
+    assertThatThrownBy(() -> sut.loadById(1)).isEqualTo(new SomethingNotFoundException(1));
   }
 
 }

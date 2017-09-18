@@ -1,8 +1,8 @@
-package de.mobile.backpressure;
+package de.mobile.rx.backpressure;
 
-import de.mobile.something.Something;
-import de.mobile.something.Somethings;
-import de.mobile.something.SomethingsImpl;
+import de.mobile.rx.something.Somethings;
+import de.mobile.rx.something.Something;
+import de.mobile.rx.something.SomethingsImpl;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

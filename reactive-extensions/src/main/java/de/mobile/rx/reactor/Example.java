@@ -1,8 +1,8 @@
-package de.mobile.reactor;
+package de.mobile.rx.reactor;
 
 import reactor.core.publisher.Flux;
 
-import static de.mobile.reactor.Color.*;
+import static de.mobile.rx.reactor.Color.*;
 
 public class Example {
 

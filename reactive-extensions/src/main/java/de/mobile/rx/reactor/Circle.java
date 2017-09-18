@@ -1,4 +1,4 @@
-package de.mobile.reactor;
+package de.mobile.rx.reactor;
 
 import lombok.Value;
 

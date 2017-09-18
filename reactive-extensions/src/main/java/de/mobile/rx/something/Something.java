@@ -1,4 +1,4 @@
-package de.mobile.something;
+package de.mobile.rx.something;
 
 import lombok.Value;
 
