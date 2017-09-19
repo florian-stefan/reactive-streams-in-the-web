@@ -22,8 +22,8 @@ public class Example {
     CountDownLatch countDownLatch = new CountDownLatch(1);
 
     Flux.fromIterable(ids)
-      .flatMap(id -> Mono
-        .fromCallable(() -> somethings.loadById(id))
+      .flatMap(id -> Mono.just(id)
+        .map(somethings::loadById)
         .subscribeOn(scheduler))
       .log()
       .doOnComplete(countDownLatch::countDown)

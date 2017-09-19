@@ -35,8 +35,8 @@ public class Example2 {
 
     Flux.fromIterable(ids)
       .log()
-      .flatMap(id -> Mono
-        .fromCallable(() -> somethings.loadById(id))
+      .flatMap(id -> Mono.just(id)
+        .map(somethings::loadById)
         .subscribeOn(scheduler), 3)
       .doOnNext(handleSomething())
       .doOnComplete(countDownLatch::countDown)
