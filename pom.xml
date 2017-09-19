@@ -11,6 +11,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <modules>
+        <module>ajax-requests</module>
         <module>reactive-extensions</module>
         <module>server-side-rendering</module>
         <module>widget-server</module>
