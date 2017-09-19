@@ -12,6 +12,7 @@
 
     <modules>
         <module>reactive-extensions</module>
+        <module>widget-server</module>
     </modules>
 
     <packaging>pom</packaging>
