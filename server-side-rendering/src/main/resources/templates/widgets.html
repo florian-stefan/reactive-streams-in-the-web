@@ -18,10 +18,10 @@
 </head>
 <body>
 <div class="boxes">
-    <article th:each="widget : ${widgets}" class="cBox cBox--content">
+    <article th:each="content : ${contents}" class="cBox cBox--content">
         <section class="cBox cBox--content-body">
             <div class="content">
-                <div th:utext="${widget}" class="loading--xl-centered"></div>
+                <div th:utext="${content}" class="loading--xl-centered"></div>
             </div>
         </section>
     </article>

@@ -19,7 +19,7 @@ public class WidgetsController {
   public Future<ModelAndView> getWidgets() {
     return widgetService.loadWidgets().thenApply(widgets -> {
       final ModelAndView modelAndView = new ModelAndView("widgets");
-      modelAndView.addObject("widgets", widgets);
+      modelAndView.addObject("contents", widgets);
       return modelAndView;
     });
   }
