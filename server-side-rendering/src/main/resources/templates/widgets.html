@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Server-Side Rendering</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://static.classistatic.de/shared/mde-style/2.1.0/style.css">
+    <style>
+        .cBox {
+            width: 300px;
+            margin-right: 18px;
+            float: left;
+        }
+
+        .content > div {
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="boxes">
+    <article th:each="widget : ${widgets}" class="cBox cBox--content">
+        <section class="cBox cBox--content-body">
+            <div class="content">
+                <div th:utext="${widget}" class="loading--xl-centered"></div>
+            </div>
+        </section>
+    </article>
+</div>
+</body>
+</html>

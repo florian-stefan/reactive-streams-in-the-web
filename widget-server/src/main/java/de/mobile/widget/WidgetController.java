@@ -1,4 +1,4 @@
-package de.mobile.widgets;
+package de.mobile.widget;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

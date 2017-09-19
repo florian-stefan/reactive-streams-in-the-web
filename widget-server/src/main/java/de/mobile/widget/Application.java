@@ -1,4 +1,4 @@
-package de.mobile.widgets;
+package de.mobile.widget;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
 @SpringBootApplication
-public class WidgetApplication {
+public class Application {
 
   public static void main(String[] args) {
-    SpringApplication.run(WidgetApplication.class, args);
+    SpringApplication.run(Application.class, args);
   }
 
   @Bean
