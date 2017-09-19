@@ -12,6 +12,7 @@
 
     <modules>
         <module>ajax-requests</module>
+        <module>big-pipe</module>
         <module>reactive-extensions</module>
         <module>server-side-rendering</module>
         <module>widget-server</module>
@@ -31,6 +32,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <repositories>
         <repository>

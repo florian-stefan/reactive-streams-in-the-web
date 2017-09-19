@@ -1,0 +1,62 @@
+widget-service:
+  widgets:
+    -
+      name: widget1
+      url: http://localhost:8081/widget
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis sit amet turpis faucibus rutrum interdum id urna. Nam finibus
+      delay: 500
+    -
+      name: widget2
+      url: http://localhost:8081/widget
+      content: eros ac eleifend elementum. Morbi nisi enim, aliquet ac ligula ac, tristique cursus leo. Cras vulputate venenatis placerat. Curabitur nunc
+      delay: 500
+    -
+      name: widget3
+      url: http://localhost:8081/widget
+      content: turpis, euismod nec dui nec, porttitor maximus nibh. Proin fermentum, sem a lobortis vehicula, ante enim condimentum mi, eget
+      delay: 500
+    -
+      name: widget4
+      url: http://localhost:8081/widget
+      content: ullamcorper ligula leo ut erat. Sed malesuada, est sed tristique mollis, sem orci vulputate orci, interdum aliquam velit augue at tortor.
+      delay: 500
+    -
+      name: widget5
+      url: http://localhost:8081/widget
+      content: ullamcorper ligula leo ut erat. Sed malesuada, est sed tristique mollis, sem orci vulputate orci, interdum aliquam velit augue at tortor.
+      delay: 500
+    -
+      name: widget6
+      url: http://localhost:8081/widget
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis sit amet turpis faucibus rutrum interdum id urna. Nam finibus
+      delay: 500
+    -
+      name: widget7
+      url: http://localhost:8081/widget
+      content: eros ac eleifend elementum. Morbi nisi enim, aliquet ac ligula ac, tristique cursus leo. Cras vulputate venenatis placerat. Curabitur nunc
+      delay: 500
+    -
+      name: widget8
+      url: http://localhost:8081/widget
+      content: turpis, euismod nec dui nec, porttitor maximus nibh. Proin fermentum, sem a lobortis vehicula, ante enim condimentum mi, eget
+      delay: 500
+    -
+      name: widget9
+      url: http://localhost:8081/widget
+      content: ullamcorper ligula leo ut erat. Sed malesuada, est sed tristique mollis, sem orci vulputate orci, interdum aliquam velit augue at tortor.
+      delay: 500
+    -
+      name: widget10
+      url: http://localhost:8081/widget
+      content: ullamcorper ligula leo ut erat. Sed malesuada, est sed tristique mollis, sem orci vulputate orci, interdum aliquam velit augue at tortor.
+      delay: 500
+    -
+      name: widget11
+      url: http://localhost:8081/widget
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis sit amet turpis faucibus rutrum interdum id urna. Nam finibus
+      delay: 500
+    -
+      name: widget12
+      url: http://localhost:8081/widget
+      content: ullamcorper ligula leo ut erat. Sed malesuada, est sed tristique mollis, sem orci vulputate orci, interdum aliquam velit augue at tortor.
+      delay: 999
