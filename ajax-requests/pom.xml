@@ -12,7 +12,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>server-side-rendering</artifactId>
+    <artifactId>ajax-requests</artifactId>
 
     <dependencies>
         <dependency>
