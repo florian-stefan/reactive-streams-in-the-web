@@ -10,6 +10,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.net.URI;
+import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
@@ -26,24 +27,31 @@ public class WidgetService {
     this.widgetServiceProperties = widgetServiceProperties;
   }
 
-  public Flux<Pagelet> loadWidgets() {
-    return Flux.merge(widgetServiceProperties.getWidgets().stream()
-      .map(this::loadWidget)
-      .collect(toList()));
+  public Flux<Pagelet> loadPagelets() {
+    List<Widget> widgets = widgetServiceProperties.getWidgets();
+
+    List<Mono<Pagelet>> pageletMonos = widgets.stream()
+      .map(this::loadPagelet)
+      .collect(toList());
+
+    return Flux.merge(pageletMonos);
   }
 
-  private Mono<Pagelet> loadWidget(final Widget widget) {
+  private Mono<Pagelet> loadPagelet(final Widget widget) {
     URI uri = UriComponentsBuilder.fromUriString(widget.getUrl())
       .queryParam("content", widget.getContent())
       .queryParam("delay", widget.getDelay())
       .build()
       .toUri();
+    String name = widget.getName();
 
-    return webClient.get()
+    Mono<Pagelet> pageletMono = webClient.get()
       .uri(uri)
       .exchange()
-      .flatMap(r -> r.bodyToMono(String.class))
-      .map(content -> new Pagelet(widget.getName(), content));
+      .flatMap(response -> response.bodyToMono(String.class))
+      .map(body -> new Pagelet(name, body));
+
+    return pageletMono;
   }
 
   @Value

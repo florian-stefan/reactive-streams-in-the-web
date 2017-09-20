@@ -29,7 +29,7 @@ public class WidgetController {
 
     return Flux.concat(
       Mono.just(template.replace("</body>", "").replace("</html>", "")),
-      widgetService.loadWidgets().map(this::wrapAsJavaScriptFunction),
+      widgetService.loadPagelets().map(this::wrapAsJavaScriptFunction),
       Mono.just("</body></html>")
     );
   }
