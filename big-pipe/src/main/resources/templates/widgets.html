@@ -28,5 +28,13 @@
         </section>
     </article>
 </div>
+<script th-inline="javascript" th:each="pagelet : ${pagelets}">
+    (function() {
+        var element = document.getElementById("[[${pagelet.name}]]");
+        if(element) {
+            element.innerHTML = "[(${pagelet.content})]";
+        }
+    })();
+</script>
 </body>
 </html>
