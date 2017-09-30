@@ -27,6 +27,12 @@ public class WidgetService {
     this.widgetServiceProperties = widgetServiceProperties;
   }
 
+  public List<String> getPageletNames() {
+    return widgetServiceProperties.getWidgets().stream()
+      .map(Widget::getName)
+      .collect(toList());
+  }
+
   public Flux<Pagelet> loadPagelets() {
     List<Widget> widgets = widgetServiceProperties.getWidgets();
 

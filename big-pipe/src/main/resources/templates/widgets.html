@@ -18,9 +18,9 @@
 </head>
 <body>
 <div class="boxes">
-    <article th:each="idx : ${#numbers.sequence(1, 12)}" class="cBox cBox--content">
+    <article th:each="pageletName : ${pageletNames}" class="cBox cBox--content">
         <section class="cBox cBox--content-body">
-            <div th:id="${'widget' + idx}" class="content">
+            <div th:id="${pageletName}" class="content">
                 <div class="loading--xl-centered">
                     <i class="loading--xl"><span></span></i>
                 </div>
