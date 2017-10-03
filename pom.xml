@@ -13,8 +13,8 @@
     <modules>
         <module>ajax-requests</module>
         <module>ajax-requests-http2</module>
-        <module>big-pipe</module>
         <module>server-side-rendering</module>
+        <module>progressive-html-rendering</module>
         <module>widget-server</module>
     </modules>
 

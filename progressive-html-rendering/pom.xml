@@ -12,7 +12,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>big-pipe</artifactId>
+    <artifactId>progressive-html-rendering</artifactId>
 
     <dependencies>
         <dependency>
