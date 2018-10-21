@@ -6,13 +6,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.mobile</groupId>
-    <artifactId>reactive-streams</artifactId>
+    <groupId>florian-stefan</groupId>
+    <artifactId>reactive-streams-in-the-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <modules>
         <module>ajax-requests</module>
-        <module>ajax-requests-http2</module>
+        <module>ajax-requests-with-http-2</module>
         <module>server-side-rendering</module>
         <module>progressive-html-rendering</module>
         <module>widget-server</module>
