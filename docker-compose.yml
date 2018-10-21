@@ -1,0 +1,49 @@
+version: '3.3'
+
+services:
+  widget-server:
+    build:
+      context: .
+      dockerfile: widget-server/Dockerfile
+    container_name: widget-server
+    networks:
+    - reactive-streams-in-the-web-network
+  server-side-rendering:
+    build:
+      context: .
+      dockerfile: server-side-rendering/Dockerfile
+    container_name: server-side-rendering
+    ports:
+    - "8080:8080"
+    networks:
+    - reactive-streams-in-the-web-network
+  ajax-requests:
+    build:
+      context: .
+      dockerfile: ajax-requests/Dockerfile
+    container_name: ajax-requests
+    ports:
+    - "8081:8080"
+    networks:
+    - reactive-streams-in-the-web-network
+  ajax-requests-with-http-2:
+    build:
+      context: .
+      dockerfile: ajax-requests-with-http-2/Dockerfile
+    container_name: ajax-requests-with-http-2
+    ports:
+    - "8443:8443"
+    networks:
+    - reactive-streams-in-the-web-network
+  progressive-html-rendering:
+    build:
+      context: .
+      dockerfile: progressive-html-rendering/Dockerfile
+    container_name: progressive-html-rendering
+    ports:
+    - "8082:8080"
+    networks:
+    - reactive-streams-in-the-web-network
+
+networks:
+  reactive-streams-in-the-web-network:
